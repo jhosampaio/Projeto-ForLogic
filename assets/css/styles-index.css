@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/Poppins-Regular.ttf'); 
+}
+
+
+:root{
+    --main-color: #0b3546;
+    --color-dark: #187194;
+    --color-light: #187194;
+    --white: #fff;
+}
+body{
+        margin: 0; 
+        padding: 0;         
+        font-family: Poppins-Regular, sans-serif;
+}
+ul, li, a {
+    text-decoration: none;
+    list-style: none;
+}
+.menu{
+    background: linear-gradient(120deg, var(--main-color), var(--color-dark));
+    width: 250px;
+    height: 100vh;
+    
+}
+.titulo{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, var(--white), var(--color-dark));    
+    color: var(--color-light);    
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;     
+    
+}
+.sub-title{
+    margin-bottom: 32px;
+    color: var(--white);
+    text-align: center;
+}
+.menu-itens{
+    
+}
+li{
+    margin: 15px;
+}
+li > span{
+    color: var(--white);
+    font-size: 1.17em;
+    font-weight: bold;   
+   
+}
+li > img{
+    
+    width: 25px;
+}

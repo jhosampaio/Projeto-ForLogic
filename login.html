@@ -5,24 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Operação Curiosidade</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles-login.css">
     <link rel="shortcut icon" href="assets/images/icons8-código-fonte-16.png" type="image/x-icon">
+    <script>
+        var attempt = 3;         
+        function validate() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username == "jhosampaio" && password == "123456") {                
+                window.location = "index.html"; 
+                return false;
+            }
+            else {
+                attempt--;
+                alert("Voce tem " + attempt + " tentativas;");
+                
+                if (attempt == 0) {
+                    document.getElementById("username").disabled = true;
+                    document.getElementById("password").disabled = true;
+                    document.getElementById("submit").disabled = true;
+                    return false;
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-
-    <div class="conteudo">        
-        <form class="login" action="">
-            <h1>Login</h1>
-            <label>E-mail</label>
-            <input id="txtEmail" type="text">
-            <label>Senha</label>
-            <input id="txtSenha" type="password">
-            <div id="btnAutenticar" class="button">
-                <span class="text-button">ENTRAR</span>
-            </div>
-        </form>
-
-    </div>
-    
+<body>    
+    <main class="login">
+        <div class="container">
+          <h1 class="title">OC</h1>
+          <h3 class="sub-title">Operação Curiosidade</h3>
+          <form class="login_form">
+            <input class="login_input" type="text" id="username" placeholder="Login" />
+            <span class="login_input-border"></span>
+            <input class="login_input" type="password" id="password" placeholder="Senha"/>
+            <span class="login_input-border"></span>
+            <input class="login_submit" type="button" value="Entrar" id="submit" onclick="validate()" />
+            
+            
+          </form>
+        </div>
+      </main>    
 </body>
 </html>
