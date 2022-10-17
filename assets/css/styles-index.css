@@ -24,7 +24,7 @@ ul, li, a {
     background: linear-gradient(120deg, var(--main-color), var(--color-dark));
     width: 250px;
     height: 100vh;
-    
+
 }
 .titulo{
     padding: 20px;
@@ -49,9 +49,7 @@ ul, li, a {
     color: var(--white);
     text-align: center;
 }
-.menu-itens{
-    
-}
+
 li{
     margin: 15px;
 }
