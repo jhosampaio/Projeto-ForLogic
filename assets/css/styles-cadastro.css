@@ -143,3 +143,60 @@ main{
     border-radius: 20px;
     
 }
+/*tabela*/
+table, th, td {
+    border: 1px solid var(--color-dark);
+  }
+.tables{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 13px;
+    padding-right: 13px;;
+    margin-top: 10px;
+}
+.table {
+    background: rgb(240, 231, 231);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    height: 600px;
+    margin-top: 1px;
+    
+}
+
+.table-titulo{
+    color: var(--main-color);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+.novo-cadastro{
+    display: flex;
+    justify-content: end;    
+}
+.novo-cadastro-titulo{
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+.table-sub-titulo{
+    color: var(--color-gray);
+}
+.nomes {
+    color: var(--main-color);
+}
+.emails{
+    color: var(--main-color);
+}
+.ativo{
+    color: green;
+}
+.inativo{
+    color: red;
+}
