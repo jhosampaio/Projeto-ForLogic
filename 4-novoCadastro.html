@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novo Cadastro - Operação Curiosidade</title>
-    <link rel="stylesheet" href="assets/css/styles-index.css">
+    <link rel="stylesheet" href="assets/css/styles-novoCadastro.css">
     <link rel="shortcut icon" href="assets/images/icons8-código-fonte-16.png" type="image/x-icon">
 </head>
 <body>
@@ -40,7 +40,90 @@
                 </ul>
             </div>
         </aside>
-        
+        <main>
+            <header class="header">
+                <div class="menu-header">
+                    <div class="pesquisa">
+                        <input id="input-pesquisa" class="input-pesquisa" type="text" name="pesquisa" placeholder="Pesquisar..." />
+                    </div>
+                    <div class="logo">
+                        <img src="assets/images/icons8-usuário-48.png" alt="">
+                        <p>Jhonatan Sampaio</p>
+                    </div>
+                    <div class="sair">
+                        <a href="1-login.html">
+                            <p>Sair</p>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <section class="tables">
+                <div class="forms">
+                    <div class="form-titulo">
+                        <h1>Novo Cadastro</h1>
+                        <input-status>
+                            <input type="radio" name="status" id="status">
+                            <label for="status">Ativo</label>
+                        </input-status>
+                    </div>
+                    <form action="" class="fatos">
+                        <h3>Fatos e dados</h3>
+                        <div class="estilo-linha"></div>
+                        <div class="input-group">
+                            <label>Nome
+                                <input type="text">
+                            </label>                            
+                        </div>
+                        <div class="input-email-idade">
+                            <label>E-mail
+                                <input type="email">
+                                <label>Idade
+                                    <input type="date" name="idade" id="idade">
+                                </label>
+                            </label>
+                                                        
+                        </div>
+                        
+                        <div class="input-group">
+                            <label>Endereço
+                                <input type="text">
+                            </label>                            
+                        </div>
+                        <div class="input-group">
+                            <label>Outras informações
+                                <input type="text">
+                            </label>                            
+                        </div>
+                    </form>
+                    <form action="" class="fatos">
+                        <h3>Interesses</h3>
+                        <div class="estilo-linha"></div>
+                        <div class="text-area">
+                            <textarea name="" id="" cols="90" rows="4"></textarea>
+                        </div>
+                    </form>
+                    <form action="" class="fatos">
+                        <h3>Sentimentos</h3>
+                        <div class="estilo-linha"></div>
+                        <div class="text-area">
+                            <textarea name="" id="" cols="90" rows="4"></textarea>
+                        </div>
+                    </form>
+                    <form action="" class="fatos">
+                        <h3>Valores</h3>
+                        <div class="estilo-linha"></div>
+                        <div class="text-area">
+                            <textarea name="" id="" cols="90" rows="4"></textarea>
+                        </div>
+                    </form>
+                    <div class="btn-gravar">
+                        <input type="button" value="Gravar">
+                    </div>
+
+
+                </div>
+            </section>
+        </main>
     </div>
     
 </body>

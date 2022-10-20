@@ -1,0 +1,238 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/Poppins-Regular.ttf'); 
+}
+
+
+:root{
+    --main-color: #0b3546;
+    --color-dark: #187194;
+    --color-light: #187194;
+    --color-gray: #B8B8B8;
+    --white: #fff;
+}
+body{
+    min-height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;         
+    font-family: Poppins-Regular, sans-serif;
+}
+ul, li, a {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+/* MAIN */
+.container{
+    display: flex;
+    background-color: var(--color-light);
+    width: 100vw;
+    height: 100vh;
+}
+/* BARRA LATERAL */
+.menu{
+    background: linear-gradient(120deg, var(--main-color), var(--color-dark));
+    width: 250px;
+    height: 100vh;
+
+}
+.titulo{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, var(--white), var(--color-dark));    
+    color: var(--color-light);    
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;     
+    
+}
+.sub-title{
+    margin-bottom: 32px;
+    color: var(--white);
+    text-align: center;
+}
+
+li{
+    margin: 15px;
+}
+li > span{
+    color: var(--white);
+    font-size: 1.17em;
+    font-weight: bold;   
+   
+}
+li > img{
+    
+    width: 25px;
+}
+/*MAIN*/
+main{    
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    
+    
+}
+/* HEADER */
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+}
+.menu-header{
+    display: flex;
+    justify-content: end;    
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin: 10px;
+    padding: 30px;
+    background: rgb(240, 231, 231);
+    border-radius: 20px;
+}
+.logo{    
+    display: flex;
+    align-items: center;
+    border-right: 1px solid var(--main-color) ;
+    margin: 0;
+         
+    
+}
+.logo > img{    
+    height: 30px;    
+    background: white;
+    border-radius: 50%;    
+    
+}
+.logo > p{
+    color: var(--main-color);
+    font-style: normal;
+    font-weight: bold;     
+    text-align: center;
+    margin: 5px;
+    
+    
+}
+
+.sair{
+    color: var(--main-color);
+    font-style: normal;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    
+}
+.input-pesquisa{
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    min-width: 500px;
+    border-radius: 20px;
+    
+}
+/*tabela e forms*/
+table, th, td {
+    border: 1px solid var(--color-dark);
+  }
+.tables{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 13px;
+    padding-right: 13px;;
+    margin-top: 10px;
+}
+.forms{
+    background: rgb(240, 231, 231);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;    
+    margin-top: 1px;
+}
+.form-titulo{
+    color: var(--main-color);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+form > h3{
+    color: var(--color-light);
+}
+.estilo-linha{
+    width: 500px;
+    height: 5px;
+    border-radius: 20px;
+    background: linear-gradient(120deg, var(--main-color), var(--color-dark));
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.input-group > label {
+    color: var(--color-gray);
+    font-size: 15px;
+    margin-right: 10px;
+    display: block;    
+}
+.input-group > label > input{
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    color: var(--color-gray);
+}
+.input-email-idade{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.input-email-idade label{
+    color: var(--color-gray);
+    width: 100%;
+}
+.input-email-idade label > input{    
+    border-radius: 20px;
+    color: var(--color-gray);
+    
+}
+.input-email-idade label > input[type="email"]{
+    width:50%;
+    text-align: center;
+    color: var(--color-gray);
+}
+.input-email-idade label > input[type="date"]{
+    width:30%;
+    text-align: center;
+    color: var(--color-gray);
+}
+.btn-gravar{
+    display: flex;
+    justify-content: center;
+}
+.btn-gravar > input{
+    background-color: var(--main-color);
+    width: 100px;
+    padding: 10px;
+    color: var(--color-gray);
+    font-weight: bold;
+    border-radius: 10px;
+}
