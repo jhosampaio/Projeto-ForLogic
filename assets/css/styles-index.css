@@ -27,17 +27,21 @@ ul, li, a {
     color: inherit;
 }
 /* MAIN */
-.container{
-    display: flex;
-    background-color: var(--color-light);
-    width: 100vw;
-    height: 100vh;
+main{    
+    position: absolute;
+    width: calc(100% - 250px);
+    left: 250px;
+    min-height: 100vh;
+    flex-direction: column;   
+    background: var(--color-dark);
+    
 }
 /* BARRA LATERAL */
 .menu{
+    position: fixed;
     background: linear-gradient(120deg, var(--main-color), var(--color-dark));
     width: 250px;
-    height: 100vh;
+    height: 100%;
 
 }
 .titulo{
@@ -63,28 +67,22 @@ ul, li, a {
     color: var(--white);
     text-align: center;
 }
-
-li{
-    margin: 15px;
-}
-li > span{
+.menu-home > a > li > span{
     color: var(--white);
     font-size: 1.17em;
-    font-weight: bold;   
-   
+    font-weight: bold;
+    margin: 15px;
 }
 li > img{
     
     width: 25px;
 }
-/*MAIN*/
-main{    
-    display: flex;
-    width: 100vw;
-    flex-direction: column;
-    
-    
+.menu-home a :hover{
+    color: white;
+    background: var(--color-dark);
+    padding: 10px;
 }
+
 /* HEADER */
 .header{
     display: flex;
@@ -107,9 +105,16 @@ main{
     display: flex;
     align-items: center;
     border-right: 1px solid var(--main-color) ;
-    margin: 0;
-         
+    margin: 0;        
     
+}
+.logo:hover{
+    
+    background-color: var(--main-color);
+    padding: 5px;
+}
+.logo > p:hover{
+    color: white;    
 }
 .logo > img{    
     height: 30px;    
@@ -134,6 +139,11 @@ main{
     cursor: pointer;
     margin: 10px;
     
+}
+.sair:hover{
+    background-color: var(--main-color);
+    padding: 20px;
+    color: white;
 }
 .input-pesquisa{
     border: none;
@@ -162,6 +172,15 @@ main{
     width: calc(100% / 3 - 15px);    
     padding: 15px 20px;
     background: rgb(240, 231, 231);    
+}
+.card1:hover{
+    background: var(--main-color);
+}
+.card2:hover:hover{
+    background: var(--main-color);
+}
+.card3:hover{
+    background: var(--main-color);
 }
 .card-titulo1{
     display: flex;
@@ -212,6 +231,7 @@ main{
 table, th, td {
     border: 1px solid var(--color-dark);
   }
+ 
 .tables{
     display: flex;
     align-items: center;
@@ -238,19 +258,37 @@ table, th, td {
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
+    
 }
 .table-sub-titulo{
     color: var(--color-gray);
+    
 }
 .nomes {
-    color: var(--main-color);
+    color: var(--main-color);    
+}
+.nomes:hover{
+    color: white;
+    background: var(--main-color);
 }
 .emails{
     color: var(--main-color);
 }
+.emails:hover{
+    color: white;
+    background: var(--main-color);
+}
 .ativo{
     color: green;
 }
+.ativo:hover{
+    color: white;
+    background: var(--main-color);
+}
 .inativo{
     color: red;
+}
+.inativo:hover{
+    color: white;
+    background: var(--main-color);
 }

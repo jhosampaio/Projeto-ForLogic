@@ -27,17 +27,21 @@ ul, li, a {
     color: inherit;
 }
 /* MAIN */
-.container{
-    display: flex;
-    background-color: var(--color-light);
-    width: 100vw;
-    height: 100vh;
+main{    
+    position: absolute;
+    width: calc(100% - 250px);
+    left: 250px;
+    min-height: 100vh;
+    flex-direction: column;   
+    background: var(--color-dark);
+    
 }
 /* BARRA LATERAL */
 .menu{
+    position: fixed;
     background: linear-gradient(120deg, var(--main-color), var(--color-dark));
     width: 250px;
-    height: 100vh;
+    height: 100%;
 
 }
 .titulo{
@@ -63,28 +67,22 @@ ul, li, a {
     color: var(--white);
     text-align: center;
 }
-
-li{
-    margin: 15px;
-}
-li > span{
+.menu-home > a > li > span{
     color: var(--white);
     font-size: 1.17em;
-    font-weight: bold;   
-   
+    font-weight: bold;
+    margin: 15px;
 }
 li > img{
     
     width: 25px;
 }
-/*MAIN*/
-main{    
-    display: flex;
-    width: 100vw;
-    flex-direction: column;
-    
-    
+.menu-home a :hover{
+    color: white;
+    background: var(--color-dark);
+    padding: 10px;
 }
+
 /* HEADER */
 .header{
     display: flex;
@@ -111,6 +109,14 @@ main{
          
     
 }
+.logo:hover{
+    
+    background-color: var(--main-color);
+    padding: 5px;
+}
+.logo > p:hover{
+    color: white;    
+}
 .logo > img{    
     height: 30px;    
     background: white;
@@ -135,6 +141,11 @@ main{
     margin: 10px;
     
 }
+.sair:hover{
+    background-color: var(--main-color);
+    padding: 20px;
+    color: white;
+}
 .input-pesquisa{
     border: none;
     margin: 10px;
@@ -155,6 +166,7 @@ table, th, td {
     padding-left: 13px;
     padding-right: 13px;;
     margin-top: 10px;
+    height: 100%;
 }
 .forms{
     background: rgb(240, 231, 231);
@@ -228,11 +240,16 @@ form > h3{
     display: flex;
     justify-content: center;
 }
-.btn-gravar > input{
+.btn-gravar > a > button{
     background-color: var(--main-color);
     width: 100px;
     padding: 10px;
     color: var(--color-gray);
     font-weight: bold;
     border-radius: 10px;
+    cursor: pointer;
+}
+.btn-gravar > a > button:hover{
+    background-color: white;
+    color: var(--main-color);
 }

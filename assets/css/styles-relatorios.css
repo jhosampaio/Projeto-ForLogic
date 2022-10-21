@@ -105,8 +105,7 @@ li > img{
     display: flex;
     align-items: center;
     border-right: 1px solid var(--main-color) ;
-    margin: 0;
-         
+    margin: 0;        
     
 }
 .logo:hover{
@@ -154,10 +153,7 @@ li > img{
     border-radius: 20px;
     
 }
-/*tabela*/
-table, th, td {
-    border: 1px solid var(--color-dark);
-  }
+/* table */
 .tables{
     display: flex;
     align-items: center;
@@ -168,66 +164,44 @@ table, th, td {
     margin-top: 10px;
     
 }
-.table {
+.relatorios{
     background: rgb(240, 231, 231);
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 20px;
-    border-radius: 20px;
-    height: 600px;
+    border-radius: 20px;    
     margin-top: 1px;
-    
 }
-
-.table-titulo{
+.relatorios-titulo > h1{   
     color: var(--main-color);
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-}
-.novo-cadastro{
     display: flex;
-    justify-content: end;    
+    justify-content: space-between;
+    
 }
-.novo-cadastro-titulo{
-    background-color: var(--main-color);
-    color: white;
-    padding: 10px;
-    border-radius: 20px;    
-}
-.novo-cadastro-titulo:hover{
-    background-color: green;
-    color: var(--main-color);
-}
-.table-sub-titulo{
+.relatorios > label {
     color: var(--color-gray);
+    margin-top: 10px;
 }
-.nomes {
-    color: var(--main-color);    
+.relatorios > a > p {
+    color: var(--color-gray);
+    margin-top: 10px;
 }
-.nomes:hover{
+.relatorios > a > p:hover {
     color: white;
     background: var(--main-color);
+    padding: 10px;
+    border-radius: 20px;
+    width: 10%;
 }
-.emails{
-    color: var(--main-color);
-}
-.emails:hover{
-    color: white;
-    background: var(--main-color);
-}
-.ativo{
-    color: green;
-}
-.ativo:hover{
-    color: white;
-    background: var(--main-color);
-}
-.inativo{
-    color: red;
-}
-.inativo:hover{
-    color: white;
-    background: var(--main-color);
+.estilo-linha{
+    width: 100%;
+    height: 5px;
+    border-radius: 20px;
+    background: linear-gradient(120deg, var(--main-color), var(--color-dark));
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

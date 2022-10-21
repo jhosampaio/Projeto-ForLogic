@@ -9,29 +9,27 @@
     <link rel="shortcut icon" href="assets/images/icons8-código-fonte-16.png" type="image/x-icon">
 </head>
 <body>
-    <div class="container">        
+           
         <aside class="menu">            
                 <div class="titulo">
                     <h1 class="title">OC</h1>
                     <h3 class="sub-title">Operação Curiosidade</h3>
                 </div>            
             <div class="menu-itens">
-                <ul>
-                    <a href="#">
+                <ul class="menu-home">
+                    <a href="2-index.html">
                         <li>
                             <img src="assets/images/icons8-casa-100.png" alt="">
                             <span>Home</span>
                         </li>
-                    </a>
-                    <div class="linha">
-                        <a href="#">
+                    </a>                    
+                    <a href="3-cadastros.html">
                             <li>
                                 <img src="assets/images/icons8-registration-64.png" alt="">
                                 <span>Cadastro</span>
                             </li>
-                        </a>
-                    </div>
-                    <a href="#">
+                        </a>                    
+                    <a href="5-relatorios.html">
                         <li>
                             <img src="assets/images/icons8-reports-58.png" alt="">
                             <span>Relátorios</span>
@@ -70,13 +68,13 @@
                         <h3>Fatos e dados</h3>
                         <div class="estilo-linha"></div>
                         <div class="input-group">
-                            <label>Nome
-                                <input type="text">
+                            <label for="nome">Nome
+                                <input type="text" name="nome" id="nome" required>
                             </label>                            
                         </div>
                         <div class="input-email-idade">
                             <label>E-mail
-                                <input type="email">
+                                <input type="email" name="email" required>
                                 <label>Idade
                                     <input type="date" name="idade" id="idade">
                                 </label>
@@ -86,7 +84,7 @@
                         
                         <div class="input-group">
                             <label>Endereço
-                                <input type="text">
+                                <input type="text" name="adress" required>
                             </label>                            
                         </div>
                         <div class="input-group">
@@ -117,14 +115,14 @@
                         </div>
                     </form>
                     <div class="btn-gravar">
-                        <input type="button" value="Gravar">
+                        <a href="3-cadastros.html"><button class="botao" type="submit" onsubmit="">Cadastrar</button></a>
                     </div>
 
 
                 </div>
-            </section>
+            </section> 
         </main>
-    </div>
+    
     
 </body>
 </html>

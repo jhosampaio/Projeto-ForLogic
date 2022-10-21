@@ -105,8 +105,7 @@ li > img{
     display: flex;
     align-items: center;
     border-right: 1px solid var(--main-color) ;
-    margin: 0;
-         
+    margin: 0;        
     
 }
 .logo:hover{
@@ -154,10 +153,23 @@ li > img{
     border-radius: 20px;
     
 }
+/* SECTION */
+/*cards*/
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 13px;
+    padding-right: 13px;   
+     
+}
+/* table*/
 /*tabela*/
 table, th, td {
     border: 1px solid var(--color-dark);
   }
+ 
 .tables{
     display: flex;
     align-items: center;
@@ -166,7 +178,6 @@ table, th, td {
     padding-left: 13px;
     padding-right: 13px;;
     margin-top: 10px;
-    
 }
 .table {
     background: rgb(240, 231, 231);
@@ -185,23 +196,12 @@ table, th, td {
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-}
-.novo-cadastro{
-    display: flex;
-    justify-content: end;    
-}
-.novo-cadastro-titulo{
-    background-color: var(--main-color);
-    color: white;
-    padding: 10px;
-    border-radius: 20px;    
-}
-.novo-cadastro-titulo:hover{
-    background-color: green;
-    color: var(--main-color);
+    margin-bottom: 20px;
+    
 }
 .table-sub-titulo{
     color: var(--color-gray);
+    
 }
 .nomes {
     color: var(--main-color);    
@@ -230,4 +230,25 @@ table, th, td {
 .inativo:hover{
     color: white;
     background: var(--main-color);
+}
+.imprimir {
+    display: flex;
+    justify-content: end;   
+    
+}
+button{
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px;
+    border-radius: 20px; 
+    cursor: pointer;   
+}
+button:hover{
+    background-color: var(--color-light);
+    color: var(--color-gray);
+    cursor: pointer;   
+}
+.imprimir-titulo:hover{
+    background-color: var(--color-light);
+    color: var(--color-gray);
 }

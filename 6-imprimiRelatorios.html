@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Operação Curiosidade</title>
-    <link rel="stylesheet" href="assets/css/styles-index.css">
+    <link rel="stylesheet" href="assets/css/styles-imprimir.css">
+    <link rel="stylesheet" href="assets/css/print.css" media="print">
     <link rel="shortcut icon" href="assets/images/icons8-código-fonte-16.png" type="image/x-icon">
 </head>
 <body>
@@ -14,28 +15,28 @@
             <h1 class="title">OC</h1>
             <h3 class="sub-title">Operação Curiosidade</h3>
         </div>            
-    <div class="menu-itens">
-        <ul class="menu-home">
-            <a href="2-index.html">
-                <li>
-                    <img src="assets/images/icons8-casa-100.png" alt="">
-                    <span>Home</span>
-                </li>
-            </a>                    
-            <a href="3-cadastros.html">
+        <div class="menu-itens">
+            <ul class="menu-home">
+                <a href="2-index.html">
                     <li>
-                        <img src="assets/images/icons8-registration-64.png" alt="">
-                        <span>Cadastro</span>
+                        <img src="assets/images/icons8-casa-100.png" alt="">
+                        <span>Home</span>
                     </li>
                 </a>                    
-            <a href="5-relatorios.html">
-                <li>
-                    <img src="assets/images/icons8-reports-58.png" alt="">
-                    <span>Relátorios</span>
-                </li>
-            </a>
-        </ul>
-    </div>
+                <a href="3-cadastros.html">
+                        <li>
+                            <img src="assets/images/icons8-registration-64.png" alt="">
+                            <span>Cadastro</span>
+                        </li>
+                    </a>                    
+                <a href="5-relatorios.html">
+                    <li>
+                        <img src="assets/images/icons8-reports-58.png" alt="">
+                        <span>Relátorios</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
     </aside>
         <main>
             <header class="header">
@@ -54,23 +55,13 @@
                     </div>
                 </div>
             </header>
-            <section class="cards">
-                <div class="card1">
-                    <div class="card-titulo1">100</div>
-                    <div class="card-footer">Total de cadastros</div>
-                </div>
-                <div class="card2">
-                    <div class="card-titulo2">10</div>
-                    <div class="card-footer">Cadastros no último mês</div>
-                </div>
-                <div class="card3">
-                    <div class="card-titulo3">10</div>
-                    <div class="card-footer">Cadastros com pendência de revisão</div>
-                </div>
-            </section>
+            
             <section class="tables">
                 <div class="table">
-                    <div class="table-titulo">Últimos cadastros</div>
+                    <div class="imprimir">
+                        <button>Imprimir</button>
+                    </div>
+                    <div class="table-titulo">Relatórios > Lista de usuarios</div>
                     <table>
                         <tr>
                             <th class="table-sub-titulo">Nome</th>
@@ -114,6 +105,16 @@
         </main>
         
     
-    
+    <script>
+        const button = document.querySelector('button');
+            button.addEventListener('click', () => {
+                const content = document.querySelector('.table');
+                let WinPrint = window.open('', '', 'left=0,top=0,width=500,height=300,toolbar=0,scrollbars=0,status=0');
+                WinPrint.document.write(content.innerHTML);
+                WinPrint.document.close();
+                WinPrint.focus();
+                WinPrint.print();
+        });
+    </script>
 </body>
 </html>
